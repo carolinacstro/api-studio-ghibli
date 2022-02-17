@@ -1,0 +1,2 @@
+class Ghibli < ApplicationRecord
+end
