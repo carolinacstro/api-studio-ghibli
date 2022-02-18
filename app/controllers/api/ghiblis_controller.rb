@@ -1,4 +1,4 @@
-class GhiblisController < ApplicationController
+class Api::GhiblisController < ApplicationController
   before_action :set_ghibli, only: [:show, :update, :destroy]
 
   # GET /ghiblis
@@ -18,7 +18,7 @@ class GhiblisController < ApplicationController
     @ghibli = Ghibli.new(ghibli_params)
 
     if @ghibli.save
-      render json: @ghibli, status: :created, location: @ghibli
+      render json: @ghibli, status: :created, location: api_ghibli_url(@ghibli)
     else
       render json: @ghibli.errors, status: :unprocessable_entity
     end
