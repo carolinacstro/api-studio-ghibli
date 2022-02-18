@@ -1,24 +1,32 @@
-# README
+# Studio Ghibli API Quotes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+*“Always believe in yourself. Do this and no matter where you are, you will have nothing to fear.”*
+*- The Baron, 'The Cat Returns' (2002).*
 
-Things you may want to cover:
+<p align="center">
+  <img src="https://i.pinimg.com/originals/55/4f/85/554f85ce2c375d4f5b1f9b94411b2682.gif" margin-left="100px" />
+ </p>
 
-* Ruby version
+- API de quotes do Studio Ghibli com o objetivo de estudar o framework Ruby on Rails.
 
-* System dependencies
+### Configurações iniciais para rodar o projeto
 
-* Configuration
+```
+# clonar o projeto
+git clone git@github.com:carolinacstro/studio-ghibli-api.git
+cd studio-ghibli-api
 
-* Database creation
+# instalar as dependências do Ruby on Rails
+bundle install
 
-* Database initialization
+# criar os bancos de dados de development e test
+rails db:create
 
-* How to run the test suite
+# criar as tabelas
+rails db:migrate
+``` 
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Rodar o projeto
+``` 
+rails s
+``` 
