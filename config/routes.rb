@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  namespace :api, defaults: { format: :json } do
+    root 'api/ghiblis#index'
     resources :ghiblis 
-  end 
 end
